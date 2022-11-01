@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <title>Arrays</title>
+</head>
+<body>
+    <div class="content">
+        <div class="row pt-4">
+            <div class="col text-center text-center">
+                <h1>Arreglos / Arrays</h1>
+            </div>
+            <div class="col-12 text-center">
+                <h2>Abrir la consola =P</h2>
+            </div>
+            <div class="col-12 text-center">
+                <a class="btn btn-primary" href="https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/">Metodos</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        
+       // Imprimir elementos
+       lista_amigos = ["Carlos", "Pedro", "Danny"];
+       lista_conocidos = ["Estefano", "Armando"];
+
+       console.log(lista_amigos[0]);
+
+       // Modificar un elemento
+       lista_amigos[0] = "Alex";
+       console.log(lista_amigos[0]);
+
+       // contar el numero de elentos
+       console.log(lista_amigos.length);
+       
+       // Acceder al ultimo elemento
+       console.log(lista_amigos[lista_amigos.length - 1]);
+
+       // Agregar un nuevo elemento
+       lista_amigos.push("Ivan"); // Al final
+       lista_amigos.unshift("Alex"); // Al inicio
+       console.log(lista_amigos);
+
+       // Unir arreglos (Inmutables-no cambian)
+       var lista_merge = lista_amigos.concat(lista_conocidos);
+       console.log(lista_merge);
+
+       // Ordenar arreglo
+       lista_merge.sort()
+
+       // Lo separa por caracteres
+       console.log(lista_merge.join(" | "));
+
+    </script>
+
+</body>
+</html>
